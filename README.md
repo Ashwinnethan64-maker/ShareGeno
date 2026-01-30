@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShareGeno
+### Problem Statement Id - CS01SW
+### Team Name - Horizon Hacks
+### College Name - Yenepoya School of Engineering and Technology (NIAT)
 
-## Getting Started
+## Problem Statement:
+Building a digital platform to connect surplus food sources with NGOs for the real-time redistribution and waste reduction
 
-First, run the development server:
+## Proposed Solution:
+Food wastage and hunger coexist due to the absence of a real-time, reliable coordination system between surplus food sources and NGOs. Our solution is a web-based real-time platform designed to bridge this gap across Karnataka, enabling surplus food to reach those in need quickly and safely.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The platform allows food donors (restaurants, event halls, hostels, canteens) to post surplus food details in real time. Verified NGOs receive instant notifications based on proximity and availability, enabling fast pickup and redistribution. The system uses geo-location-based matching, real-time updates, and a structured pickup workflow to minimize delays and food spoilage.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+By integrating multilingual support (English & Kannada), secure authentication, and impact analytics, the platform ensures inclusivity, trust, transparency, and measurable social impact. This solution transforms food redistribution from a manual, unorganized process into a data-driven, scalable digital ecosystem.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Innovation & Creativity:
+This project goes beyond a simple listing platform by introducing intelligent and real-time decision-making into food redistribution:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Real-Time Food-to-NGO Matching: Unlike traditional manual coordination, the system instantly connects donors and nearby NGOs using live databases and WebSockets.
 
-## Learn More
+AI-Based Spoilage Priority Scoring: Food is prioritized scientifically based on expiry time and food type, ensuring that high-risk food is redistributed first.
 
-To learn more about Next.js, take a look at the following resources:
+Geo-Optimized Distribution: NGOs are notified based on distance, reducing fuel usage, response time, and operational cost.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Transparent Impact Measurement: The platform converts food redistribution into measurable metrics such as meals served, food saved (kg), and CO₂ emissions reduced.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Trust & Accountability Layer: A two-way rating system between donors and NGOs encourages reliability and long-term ecosystem health.
 
-## Deploy on Vercel
+The innovation lies in combining real-time systems, geospatial intelligence, and data-driven prioritization to solve a critical social problem efficiently.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technical Complexity & Stack:
+We will be using Nextjs as aour primary framework.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project involves high technical complexity as it goes beyond a basic CRUD application and implements a real-time, multi-user, geo-aware system.
+
+The complexity arises from:
+
+Real-time data synchronization between donors and multiple NGOs using WebSockets/Firebase
+
+Concurrent request handling to prevent race conditions when multiple NGOs attempt to accept the same food listing
+
+Geo-spatial computation for distance-based NGO prioritization and optimized pickups
+
+Role-based access control (RBAC) ensuring secure, permission-driven workflows for donors, NGOs, and admins
+
+Event-driven notification architecture for instant alerts and state updates
+
+Algorithmic spoilage-priority scoring to rank food listings based on urgency
+
+Secure cloud deployment with scalable backend services and protected APIs
+
+Analytics computation for impact measurement and reporting
+
+## Usability & Impact:
+Simple role-based dashboards for Donors, NGOs, and Admins
+
+One-click food posting and acceptance workflow
+
+Instant notifications eliminate manual calls and delays
+
+Language accessibility with English and Kannada support
+
+Mobile-responsive web design for easy field usage
+
+Social Impact
+
+Reduces food wastage by ensuring surplus food is redistributed before expiry
+
+Improves food access for vulnerable communities
+
+Saves operational costs for NGOs through optimized routing
+
+Builds trust through verified NGOs and transparent workflows
+
+Provides donors with CSR-ready impact metrics
+
+By enabling faster redistribution, reducing waste, and increasing accountability, the platform creates a sustainable, scalable, and real-world-ready solution to hunger and food waste.
+
+## Setup Instructions:
+Just clone the repo using http or ssh and then cd into the folder and run "npm run dev" to run the app.
+
+## Presentation & Demo Link:
+Coming soon... Stay Tuned.
