@@ -80,4 +80,4 @@ By enabling faster redistribution, reducing waste, and increasing accountability
 Just clone the repo using http or ssh and then cd into the folder and run "npm run dev" to run the app.
 
 ## Presentation & Demo Link:
-Coming soon... Stay Tuned.
+Coming soon... Stay Tuned
